@@ -6,19 +6,42 @@
     align-items: center;
     width: 100%;
 }
-.tuppence-creative-box {	
+.tuppence-creative-img {
+	width: 45vw;
+	padding: 10px 0;
+}
+.tuppence-creative-box {
 	position: absolute;
 	bottom: 50px;
 	right: 50px;
-	img {
-		width: 185px;
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+	h2 {
+		font-weight: bold;
+		letter-spacing: 1px;
+		color: #010445;
+	}
+	h4 {
+		color: #010445;
 	}
 	a {
-		color: white;
+		color: #010445;
 		text-decoration: none;
 	}
 	a:hover {
-		color: #F4F4F4;
+		color: white;
+	}
+	i {
+		color: #010445;
+		font-size: 16px;
+	}
+}
+@media only screen and (max-width:1000px){
+	.tuppence-creative-img {
+		position: absolute;
+		top: 50px;
+		left: 50px;
 	}
 }
 //Iphone 6 Plus
@@ -29,3 +52,35 @@
 		left: 10%;
 	}
 }
+
+@media only screen and (max-width:650px){
+	.tuppence-creative-box {
+		img {
+			width: 25em;
+			padding: 5px 0;
+		}
+	}
+	.tuppence-creative-img {
+		width: 70vw;
+	}
+}
+@media only screen and (max-width:490px){
+	.tuppence-creative-box {
+		padding: 0;
+		img {
+			width: 20em;
+			padding: 2.5px 0;
+		}
+	}
+}
+@media only screen and (max-width:325px){
+	.tuppence-creative-box img {
+		width: 15em;
+		padding: 2.5px 0;
+		position: absolute;
+	    top: 52px;
+	    left: 13%;
+	}
+}
+
+

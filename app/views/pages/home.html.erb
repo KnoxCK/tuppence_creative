@@ -1,6 +1,13 @@
 <div class="wrapper bg-tuppence-creative">
-	<div class="tuppence-creative-box text-center">
-		<%= image_tag "Mousecode-Web-Design-Web-Development.png", alt: "Tuppence Createive London" %>
-		<h4 class="floating"><%= link_to "ally@tuppencecreative.com", "mailto:ally@tuppencecreative.com"%></h4>
+	<%= image_tag "Tuppence_creative.jpg", class: "tuppence-creative-img", alt: "Tuppence Creative London" %>
+	<div class="tuppence-creative-box">
+		<h2>ALLY DOVER</h2>
+		<h4>m: (+44) 7717 038434</h4>
+		<h4>e: <%= link_to "ally@tuppencecreative.com", "mailto:ally@tuppencecreative.com"%></h4>
+		<h4> w: <%= link_to "tuppencecreative.com", "www.tuppencecreative.com"%></h4>
+     	<h4> <%= link_to "https://www.instagram.com/tuppencecreative/" do %>
+		    		<i class="fa fa-instagram"></i> @tuppencecreative
+			<% end %>
+			</h4>
 	</div>
 </div>
