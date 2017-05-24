@@ -1,4 +1,31 @@
-/* -------------------------------------
- * CSS code specific to home page
- * (margin/padding adjustments)
- * ------------------------------------- */
+.wrapper {
+	background-position: cover;
+	height: 100vh;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.tuppence-creative-box {	
+	position: absolute;
+	bottom: 50px;
+	right: 50px;
+	img {
+		width: 185px;
+	}
+	a {
+		color: white;
+		text-decoration: none;
+	}
+	a:hover {
+		color: #F4F4F4;
+	}
+}
+//Iphone 6 Plus
+@media only screen and (max-width:740px){ 
+	.tuppence-creative-box {
+		position: fixed;
+		bottom: 50px;
+		left: 10%;
+	}
+}
